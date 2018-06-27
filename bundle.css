@@ -651,6 +651,19 @@ article .step p {
   font-size: 17px;
 }
 
+.yw-footer {
+  min-height: 50px;
+  background-color: #000;
+}
+
+.yw-footer p {
+  padding: 20px 0;
+}
+
+a.yw-link {
+  color: #fff;
+}
+
 @media only screen and (min-width: 30em) {
   body {
     font-size: 17px;
