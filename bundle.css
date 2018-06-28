@@ -649,6 +649,7 @@ article .step p {
   transition: background-color 250ms ease-in-out;
   color: #808080;
   font-size: 17px;
+  line-height: 1.7;
 }
 
 .yw-footer {
@@ -657,7 +658,9 @@ article .step p {
 }
 
 .yw-footer p {
-  padding: 20px 0;
+  padding: 1rem 1rem;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 a.yw-link {
