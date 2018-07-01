@@ -589,6 +589,14 @@ header a.logo svg {
   line-height: 1.5;
 }
 
+html {
+  background-color: #000;
+}
+
+strong {
+  color: #ff4500;
+}
+
 #content {
   background-color: #000;
   color: #ffd700;
@@ -602,6 +610,7 @@ figure.sticky {
   margin: 0;
   top: 0vh;
   left: 0;
+  pointer-events: auto;
 }
 
 figure.sticky canvas {
@@ -623,6 +632,7 @@ article {
   max-width: 30rem;
   margin: 0 auto;
   position: relative;
+  pointer-events: none;
 }
 
 article .step {
@@ -665,6 +675,33 @@ article .step p {
 
 a.yw-link {
   color: #fff;
+}
+
+.yw_tooltip {
+  width: 160px;
+  min-height: 20px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  left: -50rem;
+  top: 2rem;
+  padding: 8px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.yw_tooltip.active {
+  -webkit-transform: translate(52rem, 0);
+  -ms-transform: translate(52rem, 0);
+  transform: translate(52rem, 0);
+}
+
+.yw_tooltip p {
+  font-family: Helvetica;
+  color: #efefef;
+  margin: 0px;
+  font-size: 10px;
 }
 
 @media only screen and (min-width: 30em) {
